@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Facebook Test Suite">
+    <test name="Login Test">
+        <parameter name="url" value="https://www.facebook.com"></parameter>
+        <parameter name="email" value="{login-email}"></parameter>
+        <parameter name="password" value="{login--password}"></parameter>
+        <classes>
+            <class name="testcase.LoginTestCase">
+                <methods>
+                    <include name="get"></include>
+                    <include name="login"></include>
+                    <include name="getProfile"></include>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
